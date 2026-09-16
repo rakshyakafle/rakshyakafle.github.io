@@ -20,6 +20,15 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Playfair Display";
+  src: url('static/fonts/PlayfairDisplay-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  font-optical-sizing: auto;
+}
+
 html,
 body {
   background-color: rgb(var(--GREEN_BG));
@@ -44,9 +53,9 @@ header {
 }
 
 header h1 {
-  font-family: serif;
+  font-family: "Playfair Display", serif;
   font-size: 36px;
-  font-weight: normal;
+  font-weight: 900;
   color: rgb(var(--HL));
   margin: 0;
   text-align: center;
@@ -80,7 +89,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: serif;
+  font-family: "Playfair Display", serif;
   font-weight: normal;
   color: rgb(var(--HL));
   margin-top: var(--MED);
