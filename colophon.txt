@@ -5,4 +5,4 @@ Author: Rakshya Kafle
 URL: https://rakshyakafle.github.io/
 Updated: September 2026
 
-PURPOSE
+PURPOSE: This website serves as a guide to my hometown of Pokhara, Nepal, highlighting its scenery, travel seasons, and local food. It was created to demonstrate semantic HTML5 structure, CSS styling, and project hosting with Git and GitHub Pages.
