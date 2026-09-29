@@ -77,6 +77,11 @@ header nav a:hover {
 }
 
 main,
+main canvas {
+  width: 100%;
+  height: 100%;
+  boarder: 1px ;
+}
 footer {
   max-width: var(--PAGE_WIDTH);
   margin: 0 auto;
