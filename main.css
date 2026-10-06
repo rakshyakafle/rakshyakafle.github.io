@@ -20,23 +20,32 @@
   box-sizing: border-box;
 }
 
+/* 1. Define EB Garamond for general reading text */
 @font-face {
-  font-family: "Playfair Display";
+  font-family: "EB Garamond";
   src: url('static/Fonts/EBGaramond-VariableFont_wght.ttf') format('truetype');
-  font-weight: 900;
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
-  font-optical-sizing: auto;
+}
+
+/* 2. Define Playfair Display for headings */
+@font-face {
+  font-family: "Playfair Display";
+  src: url('static/Fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 html,
 body {
   background-color: rgb(var(--GREEN_BG));
   color: rgb(var(--FG));
-  font-family: sans-serif;
-  font-size: 12pt;
-  font-weight: 300;
-  line-height: 1.35;
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: 14pt;
+  font-weight: 400;
+  line-height: 1.6;
   min-height: 100vh;
 }
 
@@ -53,9 +62,9 @@ header {
 }
 
 header h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 36px;
-  font-weight: 900;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 40px;
+  font-weight: 700;
   color: rgb(var(--HL));
   margin: 0;
   text-align: center;
@@ -70,22 +79,25 @@ header nav {
 header nav a {
   text-decoration: none;
   color: rgb(var(--HL));
+  font-weight: 600;
 }
 
 header nav a:hover {
   text-decoration: underline;
 }
 
-main,
-main canvas {
+/* Center and constrain main content container */
+main {
   width: 100%;
-  height: 100%;
-  boarder: 1px ;
-}
-footer {
   max-width: var(--PAGE_WIDTH);
+  margin: var(--BIG) auto;
+  padding: 0 var(--MED);
+}
+
+main canvas {
+  display: block;
   margin: 0 auto;
-  padding: var(--MED);
+  border: 1px solid rgb(var(--HL));
 }
 
 h1,
@@ -94,8 +106,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", serif;
-  font-weight: normal;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
   color: rgb(var(--HL));
   margin-top: var(--MED);
   margin-bottom: var(--SML);
@@ -110,7 +122,7 @@ a:hover {
   text-decoration: underline;
 }
 
-body main strong {
+strong {
   font-weight: 600;
 }
 
@@ -140,27 +152,35 @@ figure {
 
 figure img {
   max-width: 100%;
+  width: 600px;
   height: auto;
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
 }
 
 figcaption,
 caption {
-  font-size: 10pt;
+  font-size: 11pt;
   margin-top: var(--SML);
   color: rgb(var(--FG));
-  opacity: 0.8;
+  opacity: 0.85;
+  font-style: italic;
+  text-align: center;
 }
 
 footer {
+  max-width: var(--PAGE_WIDTH);
+  margin: var(--BIG) auto 0 auto;
+  padding: var(--MED);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-top: var(--BIG);
-  padding-top: var(--MED);
   font-size: 11pt;
+  border-top: 1px solid rgba(var(--HL), 0.2);
 }
 
 footer a {
   color: rgb(var(--HL));
+  font-weight: 600;
 }

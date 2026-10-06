@@ -3,6 +3,18 @@ COLOPHON
 Site: Pokhara, Nepal: The City of Lakes
 Author: Rakshya Kafle
 URL: https://rakshyakafle.github.io/
-Updated: September 2026
+Updated: October 2026
 
-PURPOSE: This website serves as a guide to my hometown of Pokhara, Nepal, highlighting its scenery, travel seasons, and local food. It was created to demonstrate semantic HTML5 structure, CSS styling, and project hosting with Git and GitHub Pages.
+PURPOSE:
+This website serves as a guide to my hometown of Pokhara, Nepal, highlighting its scenery, travel seasons, and local food. It was created to demonstrate semantic HTML5 structure, CSS styling, and project hosting with Git and GitHub Pages.
+
+TECHNOLOGY & TOOLS:
+- Markup: Semantic HTML5
+- Styling: Custom CSS3 (variables, flexbox, responsive design)
+- Editor: Visual Studio Code
+- Version Control & Hosting: Git, GitHub Pages
+
+TYPOGRAPHY & ASSETS:
+- Headings: Playfair Display
+- Body Text: EB Garamond
+- Images: Original / local photography of Phewa Lake, Peace Pagoda, and Sarangkot
