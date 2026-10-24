@@ -1,0 +1,18 @@
++++
+draft = false
+title = 'Gallery'
++++
+
+<p>Here are some of my favorite places and views from Pokhara.</p>
+
+<h2>Phewa Lake</h2>
+<img src="/Pokhara.jpg" alt="Phewa Lake in Pokhara">
+<p>Phewa Lake is one of the most beautiful places in Pokhara.</p>
+
+<h2>Sarangkot</h2>
+<img src="/Sarangkot.jpg" alt="View from Sarangkot">
+<p>Sarangkot is a great place to see the mountains and sunrise.</p>
+
+<h2>World Peace Pagoda</h2>
+<img src="/Peacepagoda.jpg" alt="World Peace Pagoda in Pokhara">
+<p>The World Peace Pagoda offers beautiful views of Pokhara and Phewa Lake.</p>

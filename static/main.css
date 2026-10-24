@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+:root {
+  --FG: 30, 28, 27;
+  --BG: 248, 246, 242;
+  --HL: 43, 76, 111;
+  --BLUE_BG: 220, 232, 242;
+  --GREEN_BG: 234, 242, 235;
+  --PAGE_WIDTH: 960px;
+  --BIG: 32px;
+  --MED: 16px;
+  --SML: 8px;
+  --QRT: 4px;
+  --TNY: 2px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("/Fonts/EBGaramond-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/Fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(var(--GREEN_BG));
+  color: rgb(var(--FG));
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: 14pt;
+  line-height: 1.6;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(var(--BLUE_BG));
+  border-bottom: var(--TNY) solid rgb(var(--HL));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--BIG) var(--MED);
+  gap: var(--MED);
+}
+
+header h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(var(--HL));
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: var(--MED);
+}
+
+header nav a {
+  text-decoration: none;
+  color: rgb(var(--HL));
+  font-weight: 600;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: 100%;
+  max-width: var(--PAGE_WIDTH);
+  margin: var(--BIG) auto;
+  padding: 0 var(--MED);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  color: rgb(var(--HL));
+  margin-top: var(--MED);
+  margin-bottom: var(--SML);
+}
+
+p {
+  margin-bottom: var(--MED);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(var(--HL));
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  margin: var(--SML) 0 var(--MED) var(--BIG);
+  color: rgb(var(--HL));
+}
+
+li {
+  margin-bottom: var(--QRT);
+}
+
+figure {
+  margin: var(--BIG) auto;
+  text-align: center;
+}
+
+figure img {
+  display: block;
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+figcaption {
+  font-size: 11pt;
+  margin-top: var(--SML);
+  font-style: italic;
+  text-align: center;
+}
+
+main > img {
+  display: block;
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  margin: var(--MED) auto var(--BIG);
+  border-radius: 4px;
+}
+
+footer {
+  width: 100%;
+  max-width: var(--PAGE_WIDTH);
+  margin: var(--BIG) auto 0;
+  padding: var(--MED);
+  display: flex;
+  justify-content: center;
+  font-size: 11pt;
+  border-top: 1px solid rgba(var(--HL), 0.2);
+}
+
+footer a {
+  color: rgb(var(--HL));
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 32px;
+  }
+
+  main {
+    margin: var(--MED) auto;
+  }
+
+  figure img,
+  main > img {
+     display: block;
+  width: 600px;
+  max-width: 100%;
+  height: 350px;
+  object-fit: cover;
+  margin: var(--MED) auto var(--BIG);
+  border-radius: 4px;
+  }
+}
